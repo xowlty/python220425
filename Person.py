@@ -1,14 +1,13 @@
-# Person.py
+# Person.py 
 class Person:
-    def __init__(self): #__init__ 초기화 self 내가 초기화 시킨 변수, 나라는 것을 지정하려는 변수
-        self.name = "default name" #나 지정
+    def __init__(self):
+        self.name = "default name"
     def print(self):
-        print("My name is {0}".format(self.name)) # {0}: 프린트함수가 포맷 데이터 인수를 {0}자리로 치환함
+        print("My name is {0}".format(self.name))
 
-p1 = Person() #p1인스턴스 객체변수는 퍼슨 함수로 매핑됨
+
+p1 = Person()
+p2 = Person()
+p1.name = "전우치"
 p1.print()
-
-Person.title = "New title"
-print(p1.title)
-print(p2.title)
-print(Person.title)
+p2.print()
