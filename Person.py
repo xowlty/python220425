@@ -8,3 +8,7 @@ class Person:
 p1 = Person() #p1인스턴스 객체변수는 퍼슨 함수로 매핑됨
 p1.print()
 
+Person.title = "New title"
+print(p1.title)
+print(p2.title)
+print(Person.title)
